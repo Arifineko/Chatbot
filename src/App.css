@@ -1,0 +1,27 @@
+.app-container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.move-input {
+  color: rgb(25, 135, 84);
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome-text {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.loading {
+  height: 40px;
+  margin: -15px;
+}

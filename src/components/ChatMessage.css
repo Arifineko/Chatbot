@@ -1,0 +1,20 @@
+.robot-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: end;
+}
+
+
+.text-message {
+    background-color: rgb(238, 238, 238);
+    padding: 18px;
+    border-radius: 10px;
+    max-width: 300px;
+}

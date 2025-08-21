@@ -12,9 +12,20 @@
 }
 
 
-.text-message {
+.container-message {
     background-color: rgb(238, 238, 238);
     padding: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
     border-radius: 10px;
     max-width: 300px;
+    margin-top: 20px;
+}
+
+.message {
+    margin-bottom: 6px;
+}
+
+.time-message {
+    color: rgb(106, 106, 106);
 }

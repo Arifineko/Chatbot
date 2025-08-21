@@ -15,6 +15,7 @@ export function ChatMessages({ chatMessages }) {
                     <ChatMessage
                         message={chatMessage.message}
                         sender={chatMessage.sender}
+                        timeSent={chatMessage.timeSent}
                         key={chatMessage.id}
                     />
                 )

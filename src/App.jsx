@@ -6,7 +6,8 @@ import { Chatbot } from 'supersimpledev';
 
 
 function App() {
-  const [chatMessages, setChatMessages] = useState([]);
+  const getMessageStorage = JSON.parse(localStorage.getItem('messages'))
+  const [chatMessages, setChatMessages] = useState(getMessageStorage || []);
   const [inputMove, setInputMove] = useState(true)
 
   useEffect(() => {
@@ -17,6 +18,10 @@ function App() {
       }
     })
   }, [])
+
+  useEffect(() => {
+    localStorage.setItem('messages', JSON.stringify(chatMessages))
+  }, [chatMessages])
 
   function moveInput() {
     setInputMove(prev => !prev)
